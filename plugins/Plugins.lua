@@ -68,7 +68,7 @@ local function list_plugins(only_enabled)
      -- text = text..v..'  '..status..'\n'
     end
   end
-  local text = text.."\n_🍃All Plugins Reloaded🍃_\n\n"..nact.." *✔Plugins Enabled*\n"..nsum.." *📁Plugins Installed*\n\n@MahDiRoO"
+  local text = text.."\n_🍃All Plugins Reloaded🍃_\n\n"..nact.." *✔Plugins Enabled*\n"..nsum.." *📁Plugins Installed*\n\n@maxspeedhelp"
 return text
 end
 
@@ -199,7 +199,7 @@ end
   if matches[1] == '*' and is_sudo(msg) then --after changed to moderator mode, set only sudo
     return reload_plugins(true)
   end
-  if matches[1]:lower() == 'reload' and is_sudo(msg) or matches[1]:lower() == 'Reload' and is_sudo(msg) then --after changed to moderator mode, set only sudo
+  if matches[1]:lower() == '*' and is_sudo(msg) or matches[1]:lower() == 'Reload' and is_sudo(msg) then --after changed to moderator mode, set only sudo
     return reload_plugins(true)
   end
 end
@@ -224,12 +224,12 @@ return {
     "^[!/#](pl) (+) ([%w_%.%-]+) (chat)",
     "^[!/#](pl) (-) ([%w_%.%-]+) (chat)",
     "^!pl? (*)$",
-    "^[!/](reload)$",
+    "^[!/](*)$",
     "^([Pp]l) (+) ([%w_%.%-]+)$",
     "^([Pp]l) (-) ([%w_%.%-]+)$",
     "^([Pp]l) (+) ([%w_%.%-]+) (chat)",
     "^([Pp]l) (-) ([%w_%.%-]+) (chat)",
-	"^([Rr]eload)$"
+	"^(*)$"
     },
   run = run
 }
