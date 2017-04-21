@@ -1,4 +1,4 @@
---Begin GroupManager.lua By @MahDiRoO
+--Begin GroupManager.lua By @maxspeedhelp
 local function modadd(msg)
 local hash = "gp_lang:"..msg.to.id
 local lang = redis:get(hash)
@@ -2793,7 +2793,7 @@ end
 end
 if not lang then
 local settings = data[tostring(target)]["settings"] 
- text ="*ƓƦƠƲƤ ƧЄƬƬƖƝƓƧ:*\n》*Ն૦८қ ᵉᵈᶤᵗ :* "..settings.lock_edit.."\n》*Ն૦८қ ˡᶤᶰᵏˢ :* "..settings.lock_link.."\n》*Ն૦८қ ᵘˢᵉʳᶰᵃᵐᵉ :* "..settings.lock_username.."\n》*Ն૦८қ ʰᵃˢʰᵗᵃᵍˢ :* "..settings.lock_hashtags.."\n》*Ն૦८қ ᶠˡᵒᵒᵈ :* "..settings.flood.."\n》*Ն૦८қ ˢᵖᵃᵐ :* "..settings.lock_spam.."\n》*Ն૦८қ ᵐᵉᶰᵗᶤᵒᶰ :* "..settings.lock_mention.."\n》*Ն૦८қ ᵃʳᵃᵇᶤᶜ :* "..settings.lock_arabic.."\n》*Ն૦८қ ʷᵉᵇᵖᵃᵍᵉ :* "..settings.lock_webpage.."\n》*Ն૦८қ ᵐᵃʳᵏᵈᵒʷᶰ :* "..settings.lock_markdown.."\n》*Ն૦८қ ᵉᶰᵍˡᶤˢʰ :* "..settings.english.."\n》*Ն૦८қ ᶠᵒˢʰ :* "..settings.fosh.."\n》*Ն૦८қ ᵃᵈˢ :* "..settings.ads.."\n》*Ն૦८қ ᵛᶤᵉʷˢ :* "..settings.views.."\n》*Ն૦८қ ᵉᵐᵒʲᶤ :* "..settings.emoji.."\n》*gяσυρ ωєℓcσмє :* "..settings.welcome.."\n》*Ն૦८қ ᵖᶤᶰ ᵐᵉˢˢᵃᵍᵉ :* "..settings.lock_pin.."\n》*Ն૦८қ ᵗᵃᵇᶜʰᶤ :* "..settings.lock_tabchi.."\n》*вσтѕ ρяσтєcтιση :* "..settings.lock_bots.."\n*》ƒℓσσ∂ ѕєηѕιтινιту:* *"..NUM_MSG_MAX.."*\n*____________________*\n*ƓƦƠƲƤ MƲƬЄ* :\n》*ᗰυ੮૯ ᵃˡˡ : * "..settings.mute_all.."\n》*ᗰυ੮૯ ᵍᶤᶠ :* "..settings.mute_gif.."\n》*ᗰυ੮૯ ᵗᵉˣᵗ :* "..settings.mute_text.."\n》*ᗰυ੮૯ ᶤᶰˡᶤᶰᵉ :* "..settings.mute_inline.."\n》*ᗰυ੮૯ ᵍᵃᵐᵉ :* "..settings.mute_game.."\n》*ᗰυ੮૯ ᵖʰᵒᵗᵒ :* "..settings.mute_photo.."\n》*ᗰυ੮૯ ᵛᶤᵈᵉᵒ :* "..settings.mute_video.."\n》*ᗰυ੮૯ ᵃᵘᵈᶤᵒ :* "..settings.mute_audio.."\n》*ᗰυ੮૯ ᵛᵒᶤᶜᵉ :* "..settings.mute_voice.."\n》*ᗰυ੮૯ ˢᵗᶤᶜᵏᵉʳ :* "..settings.mute_sticker.."\n》*ᗰυ੮૯ ᶜᵒᶰᵗᵃᶜᵗ :* "..settings.mute_contact.."\n》*ᗰυ੮૯ ᶠᵒʳʷᵃʳᵈ :* "..settings.mute_forward.."\n》*ᗰυ੮૯ ˡᵒᶜᵃᵗᶤᵒᶰ :* "..settings.mute_location.."\n》*ᗰυ੮૯ ᵈᵒᶜᵘᵐᵉᶰᵗ :* "..settings.mute_document.."\n》*ᗰυ੮૯ ᵗᵍˢᵉʳᵛᶤᶜ :* "..settings.mute_tgservice.."\n》*ᗰυ੮૯ ᵏᵉʸᵇᵒʳᵈ :* "..settings.mute_keyboard.."\n*____________________*\n*🌐gяσυρ ℓαηgυαgє* : єη\n🗓*єχριя:* _"..expire_date.."_\n*✒ѕυ∂σ вσт:* @MahDiRoO"
+text ="*⚙️ Group Settings ⚙️*\n>*[ Lock Edit] :* "..settings.lock_edit.."\n>*[Lock Link] :* "..settings.lock_link.."\n>*[Lock Username] :* "..settings.lock_username.."\n>*[LockHashtag] :* "..settings.lock_hashtags.."\n>*[Lock Flood] :* "..settings.flood.."\n>*[Lock Spam] :* "..settings.lock_spam.."\n>*[Lock Mention] : "..settings.lock_mention.."\n>*[Lock Arabic] :* "..settings.lock_arabic.."\n>*[Lock Webpage] :* "..settings.lock_webpage.."\n>*[Lock Markdown] :* "..settings.lock_markdown.."\n>*[Lock English] :* "..settings.english.."\n>*[Lock Fosh] :* "..settings.fosh.."\n>*[Lock Ads] :* "..settings.ads.."\n>*[Lock Views] :* "..settings.views.."\n>*[Lock Emoj] :* "..settings.emoji.."\n>*[Group Welcome] :* "..settings.welcome.."\n>*[Lock Pin Message] :* "..settings.lock_pin.."\n>*[Lock Tabchi] :* "..settings.lock_tabchi.."\n>*[Bots Protectian] :* "..settings.lock_bots.."\n*>*[Flood Sensltlvity] :* *"..NUM_MSG_MAX.."*\n*____________________*\n*Group Mute* :\n>*[Mute All] :* "..settings.mute_all.."\n>*[Mute Gif] :* "..settings.mute_gif.."\n>*[Mute Text] :* "..settings.mute_text.."\n>*[Mute Inline] :* "..settings.mute_inline.."\n>*[Mute Game] :* "..settings.mute_game.."\n>*[Mute Photo]* "..settings.mute_photo.."\n>*[Mute Video] :* "..settings.mute_video.."\n>*[Mute Audio] :* "..settings.mute_audio.."\n>*[Mute Voice] :* "..settings.mute_voice.."\n>*[Mute Sticker] :* "..settings.mute_sticker.."\n>*[Mute Contact] :* "..settings.mute_contact.."\n>*[Mute Forward] :* "..settings.mute_forward.."\n>*[Mute Location] :* "..settings.mute_location.."\n>*[Mute  Document] :* "..settings.mute_document.."\n>*[Mute Tgservice] :* "..settings.mute_tgservice.."\n>*[Mute Keyboard] :* "..settings.mute_keyboard.."\n*____________________*\n*🌐Group Language* : єη\n🗓*Expir:* _"..expire_date.."_\n*✒️Sudo:* @mohammadlua"
 else
 local exp = redis:get("charged:"..msg.chat_id_)
     local day = 86400
@@ -2805,11 +2805,11 @@ local exp = redis:get("charged:"..msg.chat_id_)
        expirefa = " *"..d.."* _روز_"
    end
 local settings = data[tostring(target)]["settings"] 
- text = "*تنظیمات گروه:*\n*>قفل ویرایش پیام :* "..settings.lock_edit.."\n*>قفل لینک :* "..settings.lock_link.."\n*>قفل یوزرنیم :* "..settings.lock_username.."\n*>قفل هشتگ :* "..settings.lock_hashtags.."\n*>قفل پیام مکرر :* "..settings.flood.."\n*>قفل هرزنامه :* "..settings.lock_spam.."\n*>قفل فراخوانی :* "..settings.lock_mention.."\n*>قفل عربی :* "..settings.lock_arabic.."\n*>قفل صفحات وب :* "..settings.lock_webpage.."\n*>قفل فونت :* "..settings.lock_markdown.."\n*>قفل انگلیسی :* "..settings.english.."\n*>قفل فحش: * "..settings.fosh.."\n*>قفل تبلیفات:* "..settings.ads.."\n*>قفل پست ویودار:* "..settings.views.."\n*>قفل اموجی:* "..settings.emoji.."\n*>پیام خوشآمد گویی :* "..settings.welcome.."\n*>قفل سنجاق کردن :* "..settings.lock_pin.."\n*>قفل اوردن تبچی :* "..settings.lock_tabchi.."\n*>محافظت در برابر ربات ها :* "..settings.lock_bots.."\n*>حداکثر پیام مکرر :* *"..NUM_MSG_MAX.."*\n*____________________*\n*لیست بیصدا ها* : \n*>بیصدا همه : * "..settings.mute_all.."\n*>بیصدا تصاویر متحرک :* "..settings.mute_gif.."\n*>بیصدا متن :* "..settings.mute_text.."\n*>بیصدا کیبورد شیشه ای :* "..settings.mute_inline.."\n*>بیصدا بازی های تحت وب :* "..settings.mute_game.."\n*>بیصدا عکس :* "..settings.mute_photo.."\n*>بیصدا فیلم :* "..settings.mute_video.."\n*>بیصدا آهنگ :* "..settings.mute_audio.."\n*>بیصدا صدا :* "..settings.mute_voice.."\n*>بیصدا برچسب :* "..settings.mute_sticker.."\n*>بیصدا مخاطب :* "..settings.mute_contact.."\n*>بیصدا نقل قول :* "..settings.mute_forward.."\n*>بیصدا موقعیت :* "..settings.mute_location.."\n*>بیصدا اسناد :* "..settings.mute_document.."\n*>بیصدا خدمات تلگرام :* "..settings.mute_tgservice.."\n*>بیصدا صفحه کلید :* "..settings.mute_keyboard.."\n*____________________*\n🌐_زبان سوپرگروه_ : *فارسی*\n🗓*تاریخ انقضا گروه: * _"..expire_date.."_\n✒*برنامه نویس:* @MahDiRoO"
+text = "*تنظیمات گروه:*\n*>[قفل ویرایش پیام] :* "..settings.lock_edit.."\n*>[قفل لینک] :* "..settings.lock_link.."\n*>[قفل یوزرنیم] :* "..settings.lock_username.."\n*>[فل ویرایش پیام] :* "..settings.lock_hashtags.."\n*>[قفل هشتگ] :* "..settings.flood.."\n*>[قفل پیام مکرر] :* "..settings.lock_spam.."\n*>[قفل هرزنامه] :* "..settings.lock_mention.."\n*>[قفل فراخوانی] :* "..settings.lock_arabic.."\n*>[قفل عربی] :* "..settings.lock_webpage.."\n*>[قفل صفحات وب ] :* "..settings.lock_markdown.."\n*>[قفل فونت]:* "..settings.english.."\n*>[قفل انگلیسی]: * "..settings.fosh.."\n*>[قفل فحش]:* "..settings.ads.."\n*>[قفل تبلیفات]:* "..settings.views.."\n*>[قفل پست ویودار]:* "..settings.emoji.."\n*>[قفل اموجی] :* "..settings.welcome.."\n*>[پیام خوشآمد گویی] :* "..settings.lock_pin.."\n*>[قفل سنجاق کردن] :* "..settings.lock_tabchi.."\n*>[قفل اوردن تبچی] :* "..settings.lock_bots.."\n*>[محافظت در برابر ربات ها ] :* *"..NUM_MSG_MAX.."*\n*____________________*\n*لیست بیصدا ها* : \n*>[بیصدا همه :] : * "..settings.mute_all.."\n*>[بیصدا تصاویر متحرک] :* "..settings.mute_gif.."\n*>[یصدا متن] :* "..settings.mute_text.."\n*>[بیصدا کیبورد شیشه ای] :* "..settings.mute_inline.."\n*>[بیصدا بازی های تحت وب ] :* "..settings.mute_game.."\n*>[بیصدا عکس] :* "..settings.mute_photo.."\n*>[بیصدا فیلم]:* "..settings.mute_video.."\n*>[بیصدا آهنگ] :* "..settings.mute_audio.."\n*>[بیصدا صدا] :* "..settings.mute_voice.."\n*>[بیصدا برچسب] :* "..settings.mute_sticker.."\n*>[بیصدا مخاطب] :* "..settings.mute_contact.."\n*>[بیصدا نقل قول] :* "..settings.mute_forward.."\n*>[بیصدا موقعیت] :* "..settings.mute_location.."\n*>[بیصدا اسناد ] :* "..settings.mute_document.."\n*>[بیصدا خدمات تلگرام ] :* "..settings.mute_tgservice.."\n*>[بیصدا صفحه کلید ] :* "..settings.mute_keyboard.."\n*____________________*\n🌐_زبان سوپرگروه_ : *فارسی*\n🗓*تاریخ انقضا گروه: * _"..expire_date.."_\n✒️*برنامه نویس:* @mohammadlua"
 end
 if not lang then
-text = string.gsub(text, "yes", "[Aƈƭɪvє]")
-text = string.gsub(text, "no", "[Iɲʌƈƭɪvє]")
+text = string.gsub(text, "yes", "[Yes]")
+text = string.gsub(text, "no", "[No]")
 text =  string.gsub(text, "0", "⓪")
 text =  string.gsub(text, "1", "➀")
 text =  string.gsub(text, "2", "➁")
@@ -2821,8 +2821,8 @@ text =  string.gsub(text, "7", "➆")
 text =  string.gsub(text, "8", "➇")
 text =  string.gsub(text, "9", "➈")
  else
- text = string.gsub(text, "yes", "#فعال ✔")
- text =  string.gsub(text, "no", "#غیرفعال ✖")
+ text = string.gsub(text, "yes", " فعال ✔️")
+ text =  string.gsub(text, "no", "غیرفعال✖️")
  end
 
 return text
@@ -3546,27 +3546,26 @@ end
 
 if matches[1] == "راهنما" and is_mod(msg) then
 text = [[
-🔖*мαTdσя TG*
+🔖*#мαх™*
 
 ⚡️*برای دیدن دستورات مورد نظر خود ، مورد دلخواه را ارسال کنید*
 
 💠_دستورات فارسی :_
 
-🎗*»  راهنمای صاحب*
+📋راهنمای صاحب
+شامل دستورات راهنمای سازند ربات
 
-🔹#دستورات‌صاحب‌ربات 🙄👆🏻
 _»»»»»»»»»»»»»»»_
-🎗*»  راهنمای قفلی*
+📋راهنمای قفلی
+شامل دستورات قفل کردن و بازکردن قفل ها
 
-🔸#دستورات‌قفلی 🙄👆🏻
 _»»»»»»»»»»»»»»»_
-🎗*»  راهنمای مدیریتی*
+📋راهنمای مدیریتی
+شامل دستورات برای مدیریت گروه
 
-🔹#دستورات‌مدیریتی 🙄👆🏻
 _»»»»»»»»»»»»»»»_
-🎗*»  راهنمای فان*
-
-🔸#دستورات‌سرگرم‌کننده 🙄👆🏻
+📋راهنمای فان
+شامل دستورات عمومی و سرگرم کننده
 _»»»»»»»»»»»»»»»_
 
 > زبان ربات فارسی !
@@ -3574,159 +3573,120 @@ _برای تغییر زبان_
  *تنظیم زبان* `[فارسی , انگلسیی]`
 
 *〰〰〰〰〰〰〰〰〰*
-🎭*pwered вy :* @MahDiRoO
-💢*cнαɴɴel :* @MaTaDoRTeaM
+🎭*pwered вy :* @maxspeedhelp
+💢*cнαɴɴel :* @maxspeedhelp
 ]]
 return text
 end
 
 if matches[1] == "help" and is_mod(msg) or matches[1] == "Help" and is_mod(msg)then
 text = [[
-🔖*мαTdσя TG*
+🔖#мαх™
 
-⚡️*тo ѕee тнe coммαɴdѕ oғ yoυr deѕιred ιтeм ѕυвмιт*
+⚡️тo ѕee тнe coммαɴdѕ oғ yoυr deѕιred ιтeм ѕυвмιт
 
-💠*ҽɳɠʅιʂԋ cσɱɱαɳԃʂ :*
+💠ҽɳɠʅιʂԋ cσɱɱαɳԃʂ :
 
-🎗*>>  Sudohelp*
-#دستورات‌صاحب‌ربات 🙄👆🏻
-_»»»»»»»»»»»»»»»_
-🎗*>>  Lockhelp*
+🎗>>  Sudohelp
+📋راهنمای صاحب🏻
+»»»»»»»»»»»»»»»
+🎗>>  Lockhelp
 
-#دستورات‌قفلی 🙄👆🏻
-_»»»»»»»»»»»»»»»_
-🎗*>>  Modhelp*
+📋راهنمای قفلی
+»»»»»»»»»»»»»»»
+🎗>>  Modhelp
 
-#دستورات‌مدیریتی 🙄👆🏻
-_»»»»»»»»»»»»»»»_
-🎗*>>  Funhelp*
+📋راهنمای مدیریتی
+»»»»»»»»»»»»»»»
+🎗>>  Funhelp
 
-#دستورات‌سرگرم‌کننده 🙄👆🏻
-_»»»»»»»»»»»»»»»_
+📋راهنمای فان
+»»»»»»»»»»»»»»»
 
 > ℓαηgυαgє вσт єηgℓιѕн !
-_To Change The LanGuage_ 
-*Setlang* `[en , fa]`
+To Change The LanGuage 
+Setlang [en , fa]
 
-*〰〰〰〰〰〰〰〰〰*
-🎭*pwered вy :* @MahDiRoO
-💢*cнαɴɴel :* @MaTaDoRTeaM
+〰〰〰〰〰〰〰〰〰
+🎭pwered вy : @maxspeedhelp
+💢cнαɴɴel : @maxspeedhelp
 ]]
 return text
 end
 
 if matches[1] == "sudohelp" and is_mod(msg) or  matches[1] == "Sudohelp" and is_mod(msg) or  matches[1] == "راهنمای صاحب" and is_mod(msg) then
 text = [[
-⚜*мαTdσя TG*
-
+⚜*#мαх™*
 *Visudo* `[username|id|reply]`
 🔹_اضافه کردن سودو_
-
 *Desudo* `[username|id|reply]`
 🔸_حذف کردن سودو_
-
 *Sudolist* 
 🔹_لیست سودو‌های ربات_
-
 *Adminprom* `[username|id|reply]`
 🔸_اضافه کردن ادمین به ربات_
-
 *Admindem* `[username|id|reply]`
 🔹_حذف فرد از ادمینی ربات_
-
 *Adminlist* 
 🔸_لیست ادمین ها_
-
 *Leave* 
 🔹_خارج شدن ربات از گروه_
-
 *Autoleave* `[disable/enable]`
 🔸_خروج خودکار_
-
 *Creategroup* `[text]`
 🔹_ساخت گروه ریلم_
-
 *Createsuper* `[text]`
 🔸_ساخت سوپر گروه_
-
 *Tosuper* 
 🔹_تبدیل به سوپر گروه_
-
 *Chats*
 🔸_لیست گروه های مدیریتی ربات_
-
 *Join* `[id]`
 🔹_جوین شدن توسط ربات_
-
 *Rem* `[id]`
 🔸_حذف گروه ازطریق پنل مدیریتی_
-
 *Import* `[link]`
 🔹_جوین شدن ربات توسط لینک_
-
 *Setbotname* `[text]`
 🔸_تغییر اسم ربات_
-
 *Setbotusername* `[text]`
 🔹_تغییر یوزرنیم ربات_
-
 *Delbotusername* 
 🔸_پاک کردن یوزرنیم ربات_
-
 *Markread* `[off/on]`
 🔹_تیک دوم_
-
 *Broadcast* `[text]`
 🔸_فرستادن پیام به تمام گروه های مدیریتی ربات_
-
 *Bc* `[text]` `[gpid]`
 🔹_ارسال پیام مورد نظر به گروه خاص_
-
 *Sendfile* `[cd]` `[file]`
 🔸_ارسال فایل موردنظر از پوشه خاص_
-
 *Sendplug* `[plug]`
 🔹_ارسال پلاگ مورد نظر_
-
 *Save* `[plugin name] [reply]`
 🔸_ذخیره کردن پلاگین_
-
 *Savefile* `[address/filename] [reply]`
 🔹_ذخیره کردن فایل در پوشه مورد نظر_
-
 *Clear cache*
 🔸_پاک کردن کش مسیر .telegram-cli/data_
-
 *Check*
 🔹_اعلام تاریخ انقضای گروه_
-
 *Check* `[GroupID]`
 🔸_اعلام تاریخ انقضای گروه مورد نظر_
-
 *Charge* `[GroupID]` `[Number Of Days]`
 🔹_تنظیم تاریخ انقضای گروه مورد نظر_
-
 *Charge* `[Number Of Days]`
 🔸_تنظیم تاریخ انقضای گروه_
-
 *Jointo* `[GroupID]`
 🔹_دعوت شدن شما توسط ربات به گروه مورد نظر_
-
 *Leave* `[GroupID]`
 🔸_خارج شدن ربات از گروه مورد نظر_
-
 🍃*شما میتوانید از [!/#] در اول دستورات برای اجرای آنها بهره بگیرید*
-
 ⚡_این راهنما فقط برای سودو ها/ادمین های ربات میباشد!_
-
 ⚠`این به این معناست که فقط سودو ها/ادمین های ربات میتوانند از دستورات بالا استفاده کنند!`
-
 *موفق باشید ;)*
-
-*〰〰〰〰〰〰〰〰〰*
-🎭*pwered вy :* @MahDiRoO
-💢*cнαɴɴel :* @MaTaDoRTeaM
-
+〰〰〰〰〰〰〰〰〰
+💢*cнαɴɴel :* @maxspeedhelp
 ]]
 return text
 end
@@ -3734,33 +3694,21 @@ end
 if matches[1] == "lockhelp" and is_mod(msg) or matches[1] == "Lockhelp" and is_mod(msg)then
 text = [[
 💠*EngliSh CoMmAnDs :*
-
 #Lock commands 
-
 🔒*Lock*  
-
 `[link , username , hashtag , edit , arabic , webpage , bots , spam , flood , markdown , mention , emoji , ads , fosh]`
-
 🔓*Unlock* 
-
  `[link , username , hashtag , edit , arabic , webpage , bots , spam , flood , markdown , mention , emoji , ads , fosh]`
-
  #Mute commands
-
 🔇*Mute* 
-
 `[gif , photo , document , sticker , video , text , forward , location , audio , voice , contact ,tgservice , inline , all , keyboard]`
-
 🔊*Unmute*
-
  `[gif , photo , document , sticker , video , text , forward , location , audio , voice , contact, tgservice , inline , all , keybord]`
  
  *> LanGuage BoT EngliSh !*
 _To Change The LanGuage_ `[Setlang]` `[en , fa]`
-
-*〰〰〰〰〰〰〰〰〰*
-🎭*pwered вy :* @MahDiRoO
-💢*cнαɴɴel :* @MaTaDoRTeaM
+〰〰〰〰〰〰〰〰〰
+💢*cнαɴɴel :* @maxspeedhelp
  ]]
 return text
 end
@@ -3768,33 +3716,20 @@ end
 if matches[1] == "راهنمای قفلی" and is_mod(msg) then
  text = [[
 💠_دستورات فارسی :_
-
 #دستورات قفلی 
-
 🔒*قفل*
-
 `{لینک ، یوزرنیم ، هشتگ ، فراخوانی ، اسپم ، حساسیت ، ویرایش ، ربات ، مارکدون ، وب ، سنجاق ، انگلیسی ، عربی ، ویو ، امجو ، تبلیغات ، فحش}`
-
 🔓*بازکردن* 
-
 `{لینک ، یوزرنیم ، هشتگ ، فراخوانی ، اسپم ، حساسیت ، ویرایش ، ربات ، مارکدون ، وب ، سنجاق ، انگلیسی ، عربی ، ویو ، امجو ، تبلیغات ، فحش}`
-
 #دستورات بیصدا
-
 🔇*بیصدا *
-
 `{همه ، گیف ، متن ، عکس ، ویدیو ، آهنگ ، ویس ، استیکر ، مخاطب ، فورواد ، کیبورد ، فایل ، مکان ، سرویس تلگرام ، بازی ، دکمه شیشه ای}`
-
 🔊*باصدا *
-
 `{همه ، گیف ، متن ، عکس ، ویدیو ، آهنگ ، ویس ، استیکر ، مخاطب ، فورواد ، کیبورد ، فایل ، مکان ، سرویس تلگرام ، بازی ، دکمه شیشه ای}`
-
 *> زبان ربات فارسی !*
 _برای تغییر زبان_ `[تنظیم زبان]` `[فارسی , انگلسیی]`
-
-*〰〰〰〰〰〰〰〰〰*
-🎭*pwered вy :* @MahDiRoO
-💢*cнαɴɴel :* @MaTaDoRTeaM
+〰〰〰〰〰〰〰〰〰
+💢*cнαɴɴel :* @maxspeedhelp
 ]]
 return text
 end
@@ -3802,105 +3737,71 @@ end
 if matches[1] == "modhelp" and is_mod(msg) or matches[1] == "Modhelp" and is_mod(msg)then
 text = [[
 💠*EngliSh CoMmAnDs :*
-
 #Modhelp
-
 *Setlang* `[fa - en]`
 ⚡️تنظیم زبان پاسخ گویی ربات به دستورات
-
 *Silent* `[username , id , reply]`
 💥ساکت کردن فرد (هر پیامی که فرد بدهد پاک میشود(
-
 *Unsilent* `[username , id , reply]`
 ⚡️بازکردن ساکت بودن فرد 
-
 *Kick* `[username , id , reply]`
 💥اخراج فرد از گروه
-
 *Ban* `[username , id , reply]`
 ⚡️مسدود کردن فرد و اجازه ورود مجدد ندادن
-
 *Unban* `[username , id , reply]`
 💥خارج شدن فرد از حالت مسدود 
-
 *Delall* `[username , id , reply]`
 ⚡️پاک کردن تمام پیام هایی که فرد داده است در گروه
-
 *Filter* `[text]`
 💥فیلتر کلمه مورد نظر و پاک شدن ان
-
 *Unfilter* `[text]`
 ⚡️حذف کلمه مورد نظر از لیست فیلتر
-
 *Welcome* `[enable-disable]`
 💥روشن و خاموش کردن خوش امفعال
-
 *Mt* [3 4]
 ⚡️تنظیم بیصدا به صورت ساعت ودقیقه
-
 *Unmt*
 💥بازکردن بیصدا زمان دار
-
 *Promote* `[username , id , reply]`
 💥تنظیم فرد به عنوان معاون ربات در گروه
-
 *Demote* `[username , id , reply]`
 💥تنزل مقام فرد از معاون ربات برای گروه
-
 *Settings*
 ⚡️دریافت لیست تنظیمات
-
 *Modelist*
 💥دریافت لیست معاون های گروه
-
 *Ownerlist*
 ⚡️دریافت لیست مدیران گروه 
-
 *Silentlist*
 💥دریافت لیست ساکت ها
-
 *Filterlist*
 ⚡️دریافت لیست کلمات فیلتر
-
 *Setflood* `[1-50]`
 💥تنظیم حساسیت پیام مکرر
-
 *Set* `[rules , name , link , about]`
 ⚡️تنظیم به ترتیب [قوانین ، اسم ، لینک ، درباره ، ] برای گروه
-
 *Setwelcome* `[text]`
 💥تنظیم خوش امد برای گروه
-
 *Res* `[username]`
 ⚡️نمایش اطلاعات یوزرنیم
-
 *Whois* `[id]`
 💥نمایش اطلاعات برای ایدی عددی
-
 *Pin* `[reply]`
 ⚡️پین پیام مورد نظر در گروه
-
 *Unpin* `[reply]`
 💥برداشتن پیام از حالت پین
-
 *Rules* 
 ⚡️نمایش قوانین گروه
-
 *About*
 💥نمایش درباره گروه
-
 *Gpinfo*
 ⚡️نمایش اطلاعات گروه
-
 *Link*
 💥دریافت لینک گروه
-
  *> LanGuage BoT EngliSh !*
 _To Change The LanGuage_ `[Setlang]` `[en , fa]`
-
-*〰〰〰〰〰〰〰〰〰*
-🎭*pwered вy :* @MahDiRoO
-💢*cнαɴɴel :* @MaTaDoRTeaM
+〰〰〰〰〰〰〰〰〰
+💢*cнαɴɴel :* @maxspeedhelp
 ]]
 return text
 end
@@ -3908,102 +3809,69 @@ end
 if matches[1] == "راهنمای مدیریتی" and is_mod(msg) then
 text = [[
 💠_دستورات فارسی :_
-
 #دستورات مدیریتی
-
 *تنظیم زبان* `[فارسی - انگلیسی]`
 ⚡️تنظیم زبان پاسخ گویی ربات به دستورات
-
 *خفه* `[username , id , reply]`
 💥ساکت کردن فرد (هر پیامی که فرد بدهد پاک میشود(
-
 *ان خفه* `[username , id , reply]`
 ⚡️بازکردن ساکت بودن فرد 
-
 *کیک* `[username , id , reply]`
 💥اخراج فرد از گروه
-
 *بن* `[username , id , reply]`
 ⚡️مسدود کردن فرد و اجازه ورود مجدد ندادن
-
 *ان بن* `[username , id , reply]`
 💥خارج شدن فرد از حالت مسدود 
-
 *حذف همه* `[username , id , reply]`
 ⚡️پاک کردن تمام پیام هایی که فرد داده است در گروه
-
 *فیلتر* `[text]`
 💥فیلتر کلمه مورد نظر و پاک شدن ان
-
 *حذف فیلتر* `[text]`
 ⚡️حذف کلمه مورد نظر از لیست فیلتر
-
 *ولکام* `[فعال-غیر فعال]`
 💥فعال و غیر فعال کردن خوش آمد گوی
-
 *بیصدا* `[3 4]`
 ⚡️تنظیم بیصدا به صورت ساعت ودقیقه
-
 *باصدا*
 💥بازکردن بیصدا زمان دار
-
 *ترفیع* `[username , id , reply]`
 🔥تنظیم فرد به عنوان معاون ربات در گروه
-
 *تنزل* `[username , id , reply]`
 ⚡تنزل مقام فرد از معاون ربات برای گروه
-
 *تنظیمات*
 ⚡️دریافت لیست تنظیمات
-
 *لیست ناظم*
 💥دریافت لیست معاون های گروه
-
 *لیست مالکان*
 ⚡️دریافت لیست مدیران گروه 
-
 *لیست خفه*
 💥دریافت لیست ساکت ها
-
 *لیست فیلتر*
 ⚡️دریافت لیست کلمات فیلتر
-
 *حساسیت اسپم* `[1-50]`
 💥تنظیم حساسیت پیام مکرر
-
 ⚡️*تنظیم* 
 `[قوانین ، لینک ، درباره گروه، ]`
-
 *تنظیم ولکام* `[text]`
 ⚡️تنظیم خوش امد برای گروه
-
 *رس* `[username]`
 💥نمایش اطلاعات یوزرنیم
-
 *شخص* `[id]`
 ⚡️نمایش اطلاعات برای ایدی عددی
-
 *سنجاق* `[reply]`
 💥پین پیام مورد نظر در گروه
-
 *برداشتن سنجاق* `[reply]`
 ⚡️برداشتن پیام از حالت پین
-
 *قوانین* 
 💥نمایش قوانین گروه
-
 *اطلاعات گروه*
 ⚡️نمایش اطلاعات گروه
-
 *لینک*
 💥دریافت لینک گروه
-
 *> زبان ربات فارسی !*
 _برای تغییر زبان_ `[تنظیم زبان]` `[فارسی , انگلسیی]`
-
-*〰〰〰〰〰〰〰〰〰*
-🎭*pwered вy :* @MahDiRoO
-💢*cнαɴɴel :* @MaTaDoRTeaM
+〰〰〰〰〰〰〰〰〰
+💢*cнαɴɴel : @maxspeedhelp
 ]]
 return text
 end
@@ -4011,63 +3879,44 @@ end
 if matches[1] == "funhelp" and is_mod(msg) or matches[1] == "Funhelp" and is_mod(msg)then
 text = [[
 💠*EngliSh CoMmAnDs :*
-
 *Azan* `[name city]`
 ⚜دریافت اطلاعات اذان شهر مورد نظر
-
 *Info*
 🔻دریافت اطلاعات شما
-
 *Me*
 ⚜دریافت مقام شما در ربات
-
 *Ping*
 🔻اطلاع از انلاین بودن ربات
-
 *Time*
 ⚜دریافت زمان و تاریخ امروز
-
 *Write* `[text]`
 🔻نوشتن کلمه با ۱۰۰ فونت مختلف
-
 *Nerkh*
 ⚜دریافت قیمت ربات جهت خرید
-
 *Weather* `[city]`
 🔻دریافت اب وهوا شهر مورد نظر
-
 *Calc* `[number]`
 ⚜ماشین حساب 
-
 *Tr* `[lang] [word]`
 🔻ترجمه متن فارسی به انگلیسی وبرعکس
 _مثال:_
 _Tr en سلام_
-
 *Short* `[link]`
 ⚜کوتاه کننده لینک
-
 *Voice* `[text]`
 🔻تبدیل متن به صدا
-
 *Sticker* `[word]`
 ⚜تبدیل متن به استیکر
-
 *Photo* `[word]`
 🔻تبدیل متن به عکس
-
 *Tosticker* `[reply]`
 ⚜تبدیل عکس به استیکر
-
 *Tophoto* `[reply]`
 🔻تبدیل استیکر‌ به عکس
-
  *> LanGuage BoT EngliSh !*
 _To Change The LanGuage_ `[Setlang]` `[en , fa]`
-
-*〰〰〰〰〰〰〰〰〰*
-🎭*pwered вy :* @MahDiRoO
-💢*cнαɴɴel :* @MaTaDoRTeaM
+〰〰〰〰〰〰〰〰〰
+💢*cнαɴɴel :* @maxspeedhelp
 ]]
 return text
 end
@@ -4075,63 +3924,44 @@ end
 if matches[1] == "راهنمای فان" and is_mod(msg)  then
 text = [[
 💠_دستورات فارسی :_
-
 *اذان* [نام شهر]
 ⚜دریافت اطلاعات اذان شهر مورد نظر
-
 *اطلاعات من*
 🔻دریافت اطلاعات شما
-
 *مقام من*
 ⚜دریافت مقام شما در ربات
-
 *انلاینی*
 🔻اطلاع از انلاین بودن ربات
-
 *ساعت*
 ⚜دریافت زمان و تاریخ امروز
-
 *نوشتن* [متن]
 🔻نوشتن کلمه با ۱۰۰ فونت مختلف
-
 *نرخ*
 ⚜دریافت قیمت ربات جهت خرید
-
 *اب و هوا* `[شهر]`
 🔻دریافت اب وهوا شهر مورد نظر
-
 *حساب* `[عدد]`
 ⚜ماشین حساب 
-
 *ترجمه* `[زبان] [کلمه]`
 🔻ترجمه متن فارسی به انگلیسی وبرعکس
 _مثال:_
 _ترجمه en سلام_
-
 *کوتاه* `[لینک]`
 ⚜کوتاه کننده لینک
-
 *ویس* `[متن]`
 🔻تبدیل متن به صدا
-
 *استیکر* `[کلمه]`
 ⚜تبدیل متن به استیکر
-
 *عکس* `[کلمه]`
 🔻تبدیل متن به عکس
-
 *به استیکر* `[ریپلای]`
 ⚜تبدیل عکس به استیکر
-
 *به عکس* `[ریپلای]`
 🔻تبدیل استیکر‌ به عکس
-
 *> زبان ربات فارسی !*
 _برای تغییر زبان_ `[تنظیم زبان]` `[فارسی , انگلسیی]`
-
-*〰〰〰〰〰〰〰〰〰*
-🎭*pwered вy :* @MahDiRoO
-💢*cнαɴɴel :* @MaTaDoRTeaM
+〰〰〰〰〰〰〰〰〰
+💢*cнαɴɴel :* @maxspeedhelp
 ]]
 return text
 end
@@ -4139,45 +3969,38 @@ end
 if matches[1] == "nerkh" or matches[1] == "Nerkh" or matches[1] == "نرخ" then
 text = [[
 `💵 نرخ فروش گروه با ربات`
-*🔖мαтαdor тɢ 💤*
-
+*#мαх™*
 ✳️_برای گروه های زیر 1000 نفر ‌_
 `➰1 ماهه  5 هزار تومان`
 `➰3 ماهه 12 هزار تومان`
-
 *〰〰〰〰〰〰〰*
 ✳️_برای گروه های بالای 1000 نفر _
 `➰1 ماهه  6 هزار تومان`
 `➰3 ماهه  14 هزار تومان`
-
 *〰〰〰〰〰〰〰*
 ✳️_برای گروه های بالای 3000 نفر ماهانه_ 
 `➰1 ماهه  8 هزار تومان `
 `➰3 ماهه  20 هزار تومان`
-
 *〰〰〰〰〰〰〰*
 ✳️_برای گروه های 5000 نفر ماهانه_ 
 `➰1 ماهه  10 هزار تومان `
 `➰3 ماهه  25  هزار تومان`
-
 *〰〰〰〰〰〰〰*
 1⃣._توجه داشته باشید به هیچ وجه نباید ربات رو از گروه حذف کنید و در صورت داشتن هرگونه مشکل فقط اون رو از ادمینی گروه بردارید و به بنده مراجعه کنید._
-
 2⃣._لازم به ذکره اولویت بصورت پرداخت کارت به کارت میباشد._
-
 3⃣._ربات داعمی نداریم به علت کیفیت و کارای بالای ربات._
 *________________*
 *برای خرید به ایدی زیر مراجعه کنید :*
-🆔: @MahDiRoO
+🆔: @maxspeedhelp
 *و اگر ریپورت هستید به :*
-🆔: @MahDiRoO`_`BoT
+🆔: @maxspeedhelp
 ]]
 return text
 end
 
-if matches[1] == "ping" or matches[1] == "Ping" or matches[1] == "انلاینی" then
+if matches[1] == "ping" or matches[1] == "ping" or matches[1] == "انلاینی" then
 text = [[
-ρøиg
+Hertz Bot now is Online.
 ]]
 return text
 end
