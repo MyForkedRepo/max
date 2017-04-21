@@ -1,4 +1,4 @@
-# [MahDiRoO](https://telegram.me/MahDiRoO)
+# [mohammad](https://telegram.me/mohammad_lua)
 
 
 * * *
@@ -9,19 +9,15 @@
 ```sh
 # Let's install the bot.
 cd $HOME
-git clone https://github.com/MRMahDiRoO/MaTaDoR.git
-cd MaTaDoR
+git clone github.com/maxcodeteam/max/
+cd max
 chmod +x matador.sh
 chmod 777 auto.sh && sed -i -e 's/\r$//' auto.sh
 ./matador.sh install
 ./matador.sh 
 # Enter a phone number & confirmation code.
 ```
-### One command
-To install everything in one command, use:
-```sh
-cd $HOME && git clone https://github.com/MRMahDiRoO/MaTaDoR.git && cd MaTaDoR && chmod +x matador.sh && chmod 777 auto.sh && sed -i -e 's/\r$//' auto.sh && ./matador.sh install && ./matador.sh
-```
+
 
 * * *
 
@@ -43,13 +39,6 @@ cd MaTaDoR && screen ./auto.sh
 
 * * *
 
-
-### Sudo
-
-Open ./bot/bot.lua and add your ID to the "sudo_users" section in the following format:
-```
-    sudo_users = {
-    377450049,
-    0,
-    YourID
-  }
+سورس ماتادور ادیت شد اپن شد توسط تیم max
+ایدی کانال ما 
+@maxspeedhelp
