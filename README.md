@@ -9,7 +9,7 @@
 ```sh
 # Let's install the bot.
 cd $HOME
-git clone github.com/maxcodeteam/max/
+git clone github.com/maxcodeteam/max
 cd max
 chmod +x matador.sh
 chmod 777 auto.sh && sed -i -e 's/\r$//' auto.sh
